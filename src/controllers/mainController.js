@@ -1,3 +1,18 @@
+/*si queremos traer objetos literales parseados de un json que
+esta en src/model:
+const data = require("ruta del json");*/
+/*data me llega de esta forma:
+* data[
+    results: [{},{},{}]
+]
+*/
+//const dataHeros = data.results;
+//console.log(dataHeros);
+//Destructuring
+//const { results } = data;
+
+
+
 const path = require("path");
 const mainController = {
     home:(req,res) => {
@@ -16,4 +31,4 @@ const mainController = {
         return res.render('detalleProducto')
     }
 }
-module.exports=mainController;
+module.exports = mainController;
